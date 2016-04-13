@@ -1,0 +1,9 @@
+Additional files
+
+CRISPR-directed mitotic recombination enables genetic mapping without crosses 
+
+plategrowthfx.R 
+    -additional R functions for image processing and mapping
+RM.var.flt.MoreIndels.vcf
+    -a VCF file containing known BY/RM variant sites
+

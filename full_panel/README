@@ -1,0 +1,32 @@
+Analysis code for
+CRISPR-directed mitotic recombination enables genetic mapping without crosses 
+
+This is the data set for the LOH panel targeting the entire left arm of chromosome VII
+
+Data:
+ 
+'phenos.RData'
+a list containing two sublists of colony radius measurements 
+'Spheno' corresponds to phenotypes for BYxRM Segregants from Bloom 2013
+'Lpheno' corresponds to phenotypes for LOH mitombinants
+
+'BYxRM_LOH_segs.RData'
+a numeric matrix 
+40742 markers by 384 mitombinants
+containing LOH mitombinant genotypes [0 = BY/BY 1 = BY/RM 2 = RM/RM]
+
+'1000BYxRM_with_names.RData'
+a numeric matrix
+1040 segregants by 28220 markers [-1 = BY   1= RM ]
+
+
+
+Workflow for scripts: 
+
+1) full_panel_sequence_processing.zip [map.sh]
+    for alignments, sequence processing and vcf generation
+2) processGenotypes.R
+    to extract genotypes from vcf and generate final genotypes for mapping
+3) full_panel_mapping.R 
+    to map traits in the full mapping panel and subset of BYxRM segregants
+

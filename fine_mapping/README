@@ -1,0 +1,27 @@
+Analysis code for
+CRISPR-directed mitotic recombination enables genetic mapping without crosses 
+
+This is the data set for the LOH fine-mapping panel targeting a region near PMR1
+
+Data:
+
+'Lphenos.RData'
+a list containing colony radius measurements for LOH mitombinants
+see trait 'manganese_sulfate;10mM' for the main focus of the publication 
+
+
+'LOH.384.BYxRM.fm.w.Sanger.RData'
+contains a numeric matrix
+40647 markers by 358 mitombinants
+containing LOH mitombinant genotypes for fine-mapping panel [0 = BY/BY 1 = BY/RM 2 = RM/RM]
+this matrix has been updated with the genotype calls near PMR1 from Sanger sequencing data
+
+
+Workflow for scripts:
+
+1) fine_mapping_panel_processing.sh
+    for alignments, sequence processing and vcf generation
+2) processGenotypes_fm.R
+    to extract genotypes from vcf and generate final genotypes for mapping
+3) fine_mapping.R 
+    to map traits in the fine-mapping panel
