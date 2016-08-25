@@ -7,4 +7,4 @@ arm of chromosome VII
 fine_mapping/ corresponds to code and data for panel of strains that fine map a region near PMR1 on chromosome VII
 
 reference/
-contrains reference data and additional R functions 
+contains reference data and additional R functions 
